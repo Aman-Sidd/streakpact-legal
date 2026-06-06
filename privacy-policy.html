@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Privacy Policy – StreakPact</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #0a0f0d;
+    --surface: #111a16;
+    --border: #1e2e26;
+    --green: #22c55e;
+    --green-dim: #16a34a;
+    --text: #e8f5ee;
+    --muted: #6b8a78;
+    --accent: #bbf7d0;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.75;
+    min-height: 100vh;
+  }
+
+  .noise {
+    position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+    opacity: 0.4;
+  }
+
+  header {
+    border-bottom: 1px solid var(--border);
+    padding: 28px 0;
+    position: relative; z-index: 1;
+  }
+
+  .container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  .brand {
+    display: flex; align-items: center; gap: 10px;
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 22px;
+    color: var(--text);
+    text-decoration: none;
+  }
+
+  .brand-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--green); }
+
+  .hero {
+    padding: 64px 0 48px;
+    position: relative; z-index: 1;
+  }
+
+  .label {
+    display: inline-block;
+    font-family: 'Syne', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--green);
+    background: rgba(34,197,94,0.1);
+    border: 1px solid rgba(34,197,94,0.2);
+    border-radius: 100px;
+    padding: 5px 14px;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(32px, 5vw, 48px);
+    font-weight: 800;
+    line-height: 1.1;
+    color: var(--text);
+    margin-bottom: 16px;
+  }
+
+  .hero-sub {
+    color: var(--muted);
+    font-size: 15px;
+    font-weight: 300;
+  }
+
+  .content {
+    position: relative; z-index: 1;
+    padding-bottom: 80px;
+  }
+
+  .section {
+    margin-bottom: 48px;
+    padding: 32px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+  }
+
+  .section-num {
+    font-family: 'Syne', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: var(--green);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  h2 {
+    font-family: 'Syne', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 16px;
+  }
+
+  p { color: #9ab8a8; margin-bottom: 14px; font-size: 15px; }
+  p:last-child { margin-bottom: 0; }
+
+  ul {
+    list-style: none;
+    margin: 12px 0 14px;
+    display: flex; flex-direction: column; gap: 8px;
+  }
+
+  li {
+    display: flex; align-items: flex-start; gap: 10px;
+    color: #9ab8a8;
+    font-size: 15px;
+  }
+
+  li::before {
+    content: '';
+    display: block;
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--green);
+    margin-top: 9px;
+    flex-shrink: 0;
+  }
+
+  .highlight-box {
+    background: rgba(34,197,94,0.06);
+    border: 1px solid rgba(34,197,94,0.15);
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin: 16px 0;
+    color: var(--accent);
+    font-size: 14px;
+  }
+
+  a { color: var(--green); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .updated {
+    color: var(--muted);
+    font-size: 13px;
+    margin-top: 6px;
+  }
+
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 32px 0;
+    text-align: center;
+    position: relative; z-index: 1;
+  }
+
+  footer p { color: var(--muted); font-size: 13px; margin: 0; }
+
+  .footer-links { display: flex; justify-content: center; gap: 24px; margin-top: 12px; }
+  .footer-links a { color: var(--muted); font-size: 13px; }
+  .footer-links a:hover { color: var(--green); }
+</style>
+</head>
+<body>
+<div class="noise"></div>
+
+<header>
+  <div class="container">
+    <a class="brand" href="#">
+      <span class="brand-dot"></span>
+      StreakPact
+    </a>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="container">
+    <div class="label">Legal</div>
+    <h1>Privacy Policy</h1>
+    <p class="hero-sub">Last updated: June 2026</p>
+  </div>
+</div>
+
+<div class="content">
+  <div class="container">
+
+    <div class="section">
+      <div class="section-num">Overview</div>
+      <h2>Our Commitment to Your Privacy</h2>
+      <p>StreakPact ("we", "us", or "our") is a habit accountability app that helps you stay consistent through pacts with others. We take your privacy seriously. This Privacy Policy explains what data we collect, why we collect it, and how we handle it.</p>
+      <p>By using StreakPact, you agree to the practices described in this policy. If you do not agree, please discontinue use of the app.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-num">01</div>
+      <h2>Information We Collect</h2>
+      <p>We collect only what is necessary to operate the app.</p>
+
+      <p><strong style="color:var(--text)">Account & Profile Information</strong></p>
+      <ul>
+        <li>Email address — used for authentication via one-time password (OTP)</li>
+        <li>Display name — shown to your pact members</li>
+        <li>Region — used to personalise your experience</li>
+        <li>Device timezone — used to calculate accurate check-in dates and pact windows</li>
+      </ul>
+
+      <p><strong style="color:var(--text)">Pact & Activity Data</strong></p>
+      <ul>
+        <li>Pacts you create or join (name, habit, target, schedule, visibility)</li>
+        <li>Daily check-in records including date, mood, and optional note</li>
+        <li>Camera photos submitted as proof of check-in</li>
+        <li>Reactions you give to other members' check-ins</li>
+        <li>Weekly outcomes (won/lost) and Reliability Score history</li>
+      </ul>
+
+      <p><strong style="color:var(--text)">Device & Technical Information</strong></p>
+      <ul>
+        <li>Expo push notification token — for sending pact reminders and alerts</li>
+        <li>App version — for enforcing minimum version requirements</li>
+        <li>Error and crash data — collected via Sentry for stability monitoring</li>
+      </ul>
+
+      <div class="highlight-box">
+        📸 Check-in photos are stored securely and are only visible to members of the same pact through time-limited signed URLs that expire after 1 hour.
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-num">02</div>
+      <h2>How We Use Your Information</h2>
+      <ul>
+        <li>To authenticate you and manage your account securely</li>
+        <li>To operate pacts — creating rooms, tracking check-ins, calculating streaks and reliability scores</li>
+        <li>To show your pact members your daily proof and activity</li>
+        <li>To send push notifications for check-in reminders, pact updates, and activity alerts</li>
+        <li>To calculate your public Reliability Score and Week Streak</li>
+        <li>To monitor and fix app crashes and errors via Sentry</li>
+        <li>To enforce fair usage limits (rate throttling) and prevent abuse</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <div class="section-num">03</div>
+      <h2>Public Information</h2>
+      <p>The following information is visible to other StreakPact users:</p>
+      <ul>
+        <li>Your display name</li>
+        <li>Your Reliability Score</li>
+        <li>Your Week Streak and best streak</li>
+        <li>Total check-in count</li>
+        <li>Your 12-week activity heatmap</li>
+        <li>Daily check-in proof photos (visible only to members in your shared pact)</li>
+      </ul>
+      <p>Your email address is never shown publicly.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-num">04</div>
+      <h2>Data Sharing & Third Parties</h2>
+      <p>We do not sell your data. We do not share your personal data with advertisers. We work with the following service providers solely to operate the app:</p>
+      <ul>
+        <li><strong style="color:var(--text)">Supabase</strong> — database, authentication, file storage, and real-time infrastructure</li>
+        <li><strong style="color:var(--text)">Sentry</strong> — crash and error monitoring (no personally identifiable content from check-ins is sent)</li>
+        <li><strong style="color:var(--text)">Expo</strong> — push notification delivery infrastructure</li>
+      </ul>
+      <p>All providers are bound by their own privacy policies and applicable data protection laws.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-num">05</div>
+      <h2>Camera & Photos</h2>
+      <p>StreakPact requires camera access to submit daily check-in proof. We use live camera capture only — gallery uploads are strictly disabled to ensure authentic proof.</p>
+      <ul>
+        <li>Photos are uploaded to secure cloud storage (Supabase Storage)</li>
+        <li>Photos are accessible only to your pact members via time-limited URLs</li>
+        <li>Photos are not used for any purpose other than displaying your check-in proof</li>
+        <li>You can request deletion of your photos by contacting us</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <div class="section-num">06</div>
+      <h2>Push Notifications</h2>
+      <p>We collect your device push token to send you relevant notifications including check-in reminders, pact activity alerts, and settlement results. You can disable push notifications at any time through your device settings. Disabling notifications does not affect your ability to use the app.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-num">07</div>
+      <h2>Data Retention</h2>
+      <ul>
+        <li>Your account and pact data is retained for as long as your account is active</li>
+        <li>Past pacts and history are retained to maintain your streak and reliability score history</li>
+        <li>Check-in photos are retained to support your pact history</li>
+        <li>You may request full account deletion at any time (see Your Rights below)</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <div class="section-num">08</div>
+      <h2>Your Rights</h2>
+      <p>You have the right to:</p>
+      <ul>
+        <li>Access the personal data we hold about you</li>
+        <li>Request correction of inaccurate data</li>
+        <li>Request deletion of your account and associated data</li>
+        <li>Withdraw consent for push notifications via device settings</li>
+        <li>Lodge a complaint with your local data protection authority</li>
+      </ul>
+      <p>To exercise any of these rights, contact us at <a href="mailto:privacy@streakpact.com">privacy@streakpact.com</a></p>
+    </div>
+
+    <div class="section">
+      <div class="section-num">09</div>
+      <h2>Children's Privacy</h2>
+      <p>StreakPact is not intended for users under the age of 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal data, please contact us immediately and we will delete it.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-num">10</div>
+      <h2>Security</h2>
+      <p>We take reasonable technical measures to protect your data including encrypted connections (HTTPS/TLS), row-level security policies on our database, time-limited signed URLs for photos, and server-enforced rate limiting. No method of transmission over the internet is 100% secure; we encourage you to use a strong unique email for your account.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-num">11</div>
+      <h2>Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. We will notify you of significant changes through the app or by email. The "last updated" date at the top of this page reflects the most recent revision. Continued use of StreakPact after changes constitutes acceptance of the updated policy.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-num">12</div>
+      <h2>Contact Us</h2>
+      <p>For any privacy-related questions or requests:</p>
+      <ul>
+        <li>Email: <a href="mailto:privacy@streakpact.com">privacy@streakpact.com</a></li>
+        <li>App: com.amansidd786.streakpact</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <p>© 2026 StreakPact. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-of-service.html">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

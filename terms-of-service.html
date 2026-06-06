@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Terms of Service – StreakPact</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #0a0f0d;
+    --surface: #111a16;
+    --border: #1e2e26;
+    --green: #22c55e;
+    --green-dim: #16a34a;
+    --text: #e8f5ee;
+    --muted: #6b8a78;
+    --accent: #bbf7d0;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.75;
+    min-height: 100vh;
+  }
+
+  .noise {
+    position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+    opacity: 0.4;
+  }
+
+  header {
+    border-bottom: 1px solid var(--border);
+    padding: 28px 0;
+    position: relative; z-index: 1;
+  }
+
+  .container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  .brand {
+    display: flex; align-items: center; gap: 10px;
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 22px;
+    color: var(--text);
+    text-decoration: none;
+  }
+
+  .brand-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--green); }
+
+  .hero {
+    padding: 64px 0 48px;
+    position: relative; z-index: 1;
+  }
+
+  .label {
+    display: inline-block;
+    font-family: 'Syne', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--green);
+    background: rgba(34,197,94,0.1);
+    border: 1px solid rgba(34,197,94,0.2);
+    border-radius: 100px;
+    padding: 5px 14px;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(32px, 5vw, 48px);
+    font-weight: 800;
+    line-height: 1.1;
+    color: var(--text);
+    margin-bottom: 16px;
+  }
+
+  .hero-sub {
+    color: var(--muted);
+    font-size: 15px;
+    font-weight: 300;
+  }
+
+  .content {
+    position: relative; z-index: 1;
+    padding-bottom: 80px;
+  }
+
+  .section {
+    margin-bottom: 48px;
+    padding: 32px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+  }
+
+  .section-num {
+    font-family: 'Syne', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: var(--green);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  h2 {
+    font-family: 'Syne', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 16px;
+  }
+
+  p { color: #9ab8a8; margin-bottom: 14px; font-size: 15px; }
+  p:last-child { margin-bottom: 0; }
+
+  ul {
+    list-style: none;
+    margin: 12px 0 14px;
+    display: flex; flex-direction: column; gap: 8px;
+  }
+
+  li {
+    display: flex; align-items: flex-start; gap: 10px;
+    color: #9ab8a8;
+    font-size: 15px;
+  }
+
+  li::before {
+    content: '';
+    display: block;
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--green);
+    margin-top: 9px;
+    flex-shrink: 0;
+  }
+
+  .highlight-box {
+    background: rgba(34,197,94,0.06);
+    border: 1px solid rgba(34,197,94,0.15);
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin: 16px 0;
+    color: var(--accent);
+    font-size: 14px;
+  }
+
+  .warning-box {
+    background: rgba(239,68,68,0.06);
+    border: 1px solid rgba(239,68,68,0.15);
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin: 16px 0;
+    color: #fca5a5;
+    font-size: 14px;
+  }
+
+  a { color: var(--green); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 32px 0;
+    text-align: center;
+    position: relative; z-index: 1;
+  }
+
+  footer p { color: var(--muted); font-size: 13px; margin: 0; }
+
+  .footer-links { display: flex; justify-content: center; gap: 24px; margin-top: 12px; }
+  .footer-links a { color: var(--muted); font-size: 13px; }
+  .footer-links a:hover { color: var(--green); }
+</style>
+</head>
+<body>
+<div class="noise"></div>
+
+<header>
+  <div class="container">
+    <a class="brand" href="#">
+      <span class="brand-dot"></span>
+      StreakPact
+    </a>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="container">
+    <div class="label">Legal</div>
+    <h1>Terms of Service</h1>
+    <p class="hero-sub">Last updated: June 2026</p>
+  </div>
+</div>
+
+<div class="content">
+  <div class="container">
+
+    <div class="section">
+      <div class="section-num">Overview</div>
+      <h2>Agreement to Terms</h2>
+      <p>These Terms of Service ("Terms") govern your use of the StreakPact mobile application ("App") operated by StreakPact ("we", "us", or "our"). By creating an account or using the App, you agree to be bound by these Terms.</p>
+      <p>If you do not agree to these Terms, do not use StreakPact. We may update these Terms from time to time — continued use of the App after changes constitutes acceptance.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-num">01</div>
+      <h2>Eligibility</h2>
+      <ul>
+        <li>You must be at least 13 years old to use StreakPact</li>
+        <li>By using the App you confirm you have the legal capacity to enter into this agreement</li>
+        <li>If you are under 18, you confirm that a parent or guardian has reviewed and agreed to these Terms on your behalf</li>
+        <li>You may only maintain one account per person</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <div class="section-num">02</div>
+      <h2>Your Account</h2>
+      <p>To use StreakPact you must register with a valid email address. You are responsible for:</p>
+      <ul>
+        <li>Keeping your account credentials secure</li>
+        <li>All activity that occurs under your account</li>
+        <li>Providing accurate information in your profile</li>
+        <li>Notifying us immediately of any unauthorised access</li>
+      </ul>
+      <p>We reserve the right to suspend or terminate accounts that violate these Terms.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-num">03</div>
+      <h2>How Pacts Work</h2>
+      <p>StreakPact allows users to create and join accountability pacts ("Pacts"). You understand and agree that:</p>
+
+      <p><strong style="color:var(--text)">Honor Pacts (current)</strong></p>
+      <ul>
+        <li>Pacts are reputation-based commitments with no financial stake</li>
+        <li>Missing your weekly target will lower your public Reliability Score</li>
+        <li>Abandoning an active pact will lower your Reliability Score by 15 points</li>
+        <li>Your Reliability Score and streak are visible to other StreakPact users</li>
+        <li>Weekly outcomes (won/lost) are permanently recorded in your history</li>
+      </ul>
+
+      <div class="highlight-box">
+        ℹ️ Cash Pacts are not currently available. The app infrastructure exists for future use. We will update these Terms before enabling any financial features.
+      </div>
+
+      <p><strong style="color:var(--text)">Check-in Rules</strong></p>
+      <ul>
+        <li>Check-ins require a live camera photo — gallery uploads are not permitted</li>
+        <li>You must be an active member of a pact to submit a check-in</li>
+        <li>Submitting false or misleading proof is a violation of these Terms</li>
+        <li>Check-in photos are shared with your pact members</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <div class="section-num">04</div>
+      <h2>Reliability Score</h2>
+      <p>Your Reliability Score is a public reputation metric that reflects your consistency in StreakPact. You acknowledge:</p>
+      <ul>
+        <li>The score starts at 100 and fluctuates based on your weekly performance</li>
+        <li>Losing a settled pact week applies an 8-point penalty</li>
+        <li>Abandoning an active pact applies a 15-point penalty</li>
+        <li>The score is visible to any StreakPact user who views your profile</li>
+        <li>We reserve the right to adjust the scoring algorithm at any time</li>
+        <li>The score is not a financial rating and carries no monetary value</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <div class="section-num">05</div>
+      <h2>User Content</h2>
+      <p>You retain ownership of the content you submit (check-in photos, notes, display name). By submitting content to StreakPact, you grant us a non-exclusive, royalty-free licence to store, display, and deliver that content to your pact members as necessary to operate the service.</p>
+
+      <p>You agree not to submit content that:</p>
+      <ul>
+        <li>Is illegal, harmful, threatening, abusive, or harassing</li>
+        <li>Contains nudity, sexually explicit material, or graphic violence</li>
+        <li>Violates any third party's intellectual property or privacy rights</li>
+        <li>Is false, misleading, or fraudulent proof of check-in</li>
+        <li>Promotes or facilitates any illegal activity</li>
+      </ul>
+
+      <div class="warning-box">
+        ⚠️ Submitting fraudulent check-in proof (e.g. photos that do not represent your actual activity) is a serious violation. We reserve the right to terminate accounts engaging in this behaviour.
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-num">06</div>
+      <h2>Acceptable Use</h2>
+      <p>You agree not to:</p>
+      <ul>
+        <li>Use the App for any unlawful purpose</li>
+        <li>Attempt to reverse-engineer, hack, or exploit the App or its backend infrastructure</li>
+        <li>Create multiple accounts to manipulate your Reliability Score</li>
+        <li>Harass, threaten, or abuse other users within pacts or through the app</li>
+        <li>Use automated bots or scripts to interact with the App</li>
+        <li>Attempt to circumvent rate limits or throttling systems</li>
+        <li>Interfere with the normal functioning of any pact or its members</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <div class="section-num">07</div>
+      <h2>Pact Membership Rules</h2>
+      <ul>
+        <li>Public pacts require a minimum of 2 members to activate</li>
+        <li>Private solo pacts activate immediately on creation</li>
+        <li>Leaving a pending pact transfers ownership to the next eligible member</li>
+        <li>Once a pact is active, leaving it triggers an abandonment penalty on your Reliability Score</li>
+        <li>Pact creators can start group pacts early once sufficient members have joined</li>
+        <li>Weekly settlement is automated — you cannot dispute the outcome of a fairly settled pact</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <div class="section-num">08</div>
+      <h2>Intellectual Property</h2>
+      <p>All content, design, code, branding, and features of StreakPact are owned by us and protected by applicable intellectual property laws. You may not copy, reproduce, distribute, or create derivative works from any part of the App without our express written permission.</p>
+      <p>"StreakPact", the flame logo, and related marks are our property. You may not use them without permission.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-num">09</div>
+      <h2>Disclaimers</h2>
+      <p>StreakPact is provided "as is" without warranties of any kind, express or implied. We do not guarantee:</p>
+      <ul>
+        <li>Uninterrupted or error-free operation of the App</li>
+        <li>That pact members will honour their commitments</li>
+        <li>Accuracy of Reliability Scores at any given moment</li>
+        <li>Permanent retention of your check-in history or photos</li>
+      </ul>
+      <p>StreakPact is a habit accountability tool, not a medical, fitness, or mental health service. Any habits or goals you track are your own responsibility.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-num">10</div>
+      <h2>Limitation of Liability</h2>
+      <p>To the fullest extent permitted by law, StreakPact and its operators shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of or inability to use the App — including but not limited to reputational impact from your Reliability Score, loss of streak data, or disputes between pact members.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-num">11</div>
+      <h2>Termination</h2>
+      <p>You may stop using StreakPact and request account deletion at any time by contacting us. We reserve the right to suspend or terminate your account at any time if we determine you have violated these Terms, with or without notice.</p>
+      <p>Upon termination, your access to the App will cease. Some data may be retained as required by law or for legitimate business purposes.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-num">12</div>
+      <h2>Governing Law</h2>
+      <p>These Terms are governed by the laws of India. Any disputes arising from your use of StreakPact shall be subject to the jurisdiction of courts in India. If you are located outside India, local laws may also apply to the extent required.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-num">13</div>
+      <h2>Changes to These Terms</h2>
+      <p>We may modify these Terms at any time. We will make reasonable efforts to notify you of significant changes through the App or via email. The "last updated" date at the top of this page reflects the latest revision. Your continued use of StreakPact after any changes constitutes your acceptance of the new Terms.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-num">14</div>
+      <h2>Contact Us</h2>
+      <p>For questions about these Terms:</p>
+      <ul>
+        <li>Email: <a href="mailto:legal@streakpact.com">legal@streakpact.com</a></li>
+        <li>App: com.amansidd786.streakpact</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <p>© 2026 StreakPact. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-of-service.html">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
